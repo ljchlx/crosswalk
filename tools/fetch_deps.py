@@ -37,6 +37,12 @@ class DepsFetcher(object):
     # so src is at self/../../../
     self._src_dir = os.path.dirname(self._xwalk_dir)
     self._root_dir = os.path.dirname(self._src_dir)
+#modified by lijc start 2014-11-11 17:52 start
+    sys.stderr.write("_xwalk_dir = %s -------lij \n" %
+        self._xwalk_dir)
+    sys.stderr.write("_src_dir = %s -------lij \n" %
+        self._src_dir)
+#modified by lijc start 2014-11-11 17:52 end
     self._new_gclient_file = os.path.join(self._root_dir,
                                           '.gclient-xwalk')
     if not os.path.isfile(self._new_gclient_file):
