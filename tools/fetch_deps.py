@@ -55,6 +55,8 @@ class DepsFetcher(object):
                    '--delete_unversioned_trees']
     gclient_cmd.append('--gclientfile=%s' %
                        os.path.basename(self._new_gclient_file))
+    sys.stderr.write("gclient_cmd = %s -------lij \n" %
+        gclient_cmd)
     gclient_utils.CheckCallAndFilterAndHeader(gclient_cmd,
         always=self._options.verbose, cwd=self._root_dir)
 
