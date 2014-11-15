@@ -38,7 +38,7 @@ blink_upstream_rev = '184144'  # FIXME(wang16): Specify a later revision than
 crosswalk_git = 'https://github.com/crosswalk-project'
 #crosswalk_git = 'git://github.com/crosswalk-project'
 #modified by lijc end
-ozone_wayland_git = 'git://github.com/01org'
+ozone_wayland_git = 'https://github.com/01org'
 
 # ------------------------------------------------------
 # gclient solutions.
